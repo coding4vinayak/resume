@@ -1,42 +1,20 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
+# Site settings
+title: "Your Name - Resume"
+description: "Professional resume of Your Name"
+url: "https://your-github-username.github.io/resume-repo"
+baseurl: ""
 
-title: Vinayak Sonawane blogs
+# Build settings
+theme: minimal-mistakes-jekyll
 
-description: I amm diving headfirst into data science and machine learning! 💻✨ I will be sharing my thoughts and learnings right here on the blog. Your suggestions and insights are more than welcome THANK YOU... ❤
-
-github_username: coding4vinayak
-website : "coding4vinayak.pythonanywhere.com"
-
-# Email and twitter are optional:
-email:  coding4vinayak@gmail.com
-twitter_username: "coding4vinayak"
-website : "coding4vinayak.pythonanywhere.com"
-
-# Set this to true to get LaTeX math equation support
-use_math:
-
-# Add your Google Analytics ID here if you have one and want to use it
-google_analytics: G-GRK65BX801
-
-# Everything below here can be ignored, unless you want to change the theme entirely
-theme: minima
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
 
-titles_from_headings:
-  enabled:     true
-  strip_title: true
-  collections: true
-
+# Markdown and syntax highlighting
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -45,3 +23,40 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+# Minimal Mistakes theme settings
+minimal_mistakes_skin: "colorful" # Using the colorful skin for a vibrant look
+
+# Site author
+author:
+  name: "Your Name"
+  avatar: "/assets/images/your-avatar.jpg"
+  bio: "Professional summary about you."
+  location: "Your Location"
+  email: "your-email@example.com"
+  twitter: your-twitter-handle
+
+# Navigation links
+nav:
+  - title: Home
+    url: /
+  - title: Resume
+    url: /resume/
+
+# Footer links
+footer_links:
+  - title: GitHub
+    url: https://github.com/your-github-username
+  - title: LinkedIn
+    url: https://linkedin.com/in/your-linkedin-username
+
+# Custom styles
+sass:
+  custom: /assets/css/custom.scss
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-octicons
+  - jekyll-github-metadata
