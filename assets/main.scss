@@ -1,61 +1,34 @@
-// Import theme
-@import "{{ site.theme }}";
+// Custom styles for a more colorful resume
 
-// Styles for post images
-.post img {
-    display: block;
-    border: 1px solid #021a40;
-    border-radius: 5px; // Add border radius for smoother edges
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); // Add shadow for depth
-    max-width: 100%; // Ensure images don't overflow their containers
+// Body background color
+body {
+  background-color: #f0f8ff; // Light blue background
 }
 
-// Styles for post figure captions
-.post figcaption {
-    text-align: center;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #555; // Darken caption color for better readability
+// Header styles
+.site-header {
+  background-color: #ff6347; // Tomato color for header
+  color: #fff;
 }
 
-// Styles for code blocks
-.language-python {
-    border-left: 1px solid lightcoral;
+// Footer styles
+.site-footer {
+  background-color: #4682b4; // Steel blue color for footer
+  color: #fff;
 }
 
-.language-python + .language-plaintext {
-    border-left: 1px solid grey;
-    margin-left: 1rem !important;
+// Link styles
+a {
+  color: #ff4500; // Orange red for links
 }
 
-.language-python + .language-plaintext code,
-.language-python + .language-plaintext pre {
-    background-color: #f7f7f7 !important; // Lighter background color for code blocks
-    border-radius: 5px; // Add border radius for smoother edges
-    padding: 1rem; // Add padding for readability
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); // Add shadow for depth
+// Button styles
+button, .btn {
+  background-color: #32cd32; // Lime green for buttons
+  color: #fff;
 }
 
-// Styles for Jupyter Notebook HTML Code Cells
-.input_area pre,
-.input_area div,
-.output_area pre,
-.output_area div {
-    margin: 0.5rem 0 !important; // Increase margin for better separation
-    padding: 0.5rem !important; // Add padding for readability
+// Custom font
+body {
+  font-family: 'Roboto', sans-serif;
 }
-
-// Styles for code cell container
-.codecell {
-    border: 1px solid #ddd; // Add border for separation
-    border-radius: 5px; // Add border radius for smoother edges
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Add shadow for depth
-    margin: 1rem 0 !important;
-    padding: 1rem !important;
-    background-color: #fff; // White background color
-}
-
-.codecell table {
-    width: 100%; // Make tables responsive
-}
-
